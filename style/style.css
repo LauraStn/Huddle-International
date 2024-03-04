@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.firstPage {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px 40px;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.startedButton {
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 55px;
+  font-weight: 700;
+  text-decoration: none;
+}
