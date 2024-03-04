@@ -10,6 +10,31 @@ body {
   position: relative;
 }
 
+/* Header description */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 30px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.header img {
+  width: auto;
+  height: 16px;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 3px 15px;
+  border-radius: 25px;
+  font-size: small;
+  box-shadow: 1px 1px 8px -5px hsl(208, 11%, 55%);
+}
+
 h1,
 h2,
 h3 {
