@@ -8,6 +8,12 @@ body {
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
+ 
+.bg__dark {
+  background-color: hsl(192, 100%, 9%);
+  color: aliceblue;
+
+}
 
 /* Header description */
 .header {
@@ -41,6 +47,7 @@ h3 {
   font-weight: 600;
   font-style: normal;
 }
+
 .mockUps {
   padding: 61px 0px;
 }
@@ -58,9 +65,11 @@ p {
 h2 {
   font-size: 19px;
 }
+
 h3 {
   font-size: 17px;
 }
+
 .firstPage {
   display: flex;
   flex-wrap: wrap;
@@ -78,6 +87,7 @@ img {
   max-height: auto;
   width: 600px;
 }
+
 .startedButton {
   background-color: hsl(322, 100%, 66%);
   color: white;
@@ -89,6 +99,7 @@ img {
   /* width: 200px; */
   margin: 0 30px;
 }
+
 .main__section {
   display: flex;
   flex-direction: column;
@@ -105,6 +116,7 @@ img {
   padding-top: 60px;
   padding-bottom: 40px;
   margin-inline: 20px;
+  /* background-color: white; */
 }
 
 .main__section__article img {
