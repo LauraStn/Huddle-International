@@ -13,7 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <script src="./script/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agence Web</title>
@@ -22,13 +25,21 @@
   <body> 
     <header class="header">
       <img class="header__logo" src="./image/logo.svg" alt="logo-huddle" />
-      <!-- <i class="fa-solid fa-moon myImg"></i> -->
       <img class="header__moon myImg" src="./image/icons8-symbole-de-la-lune-30.png" alt="image-lune">
       <a href="#">Try It Free</a>
     </header>
+    <div class="bg_img">
+      <picture>
+        <source
+          srcset="./image/bg_hero_desktop.svg"
+          media="(min-width: 600px)"
+        />
+        <img src="./image/bg_hero_mobile.svg" alt="MDN" class="cd" />
+      </picture>
+    </div>
     <main>
       <div class="firstPage">
-        <section class="main_article">
+        <section class="home_article">
           <h1>
             Build The Community <br />
             Your Fans Will Love
@@ -40,14 +51,14 @@
           </p>
           <a
             class="startedButton"
-            href=""
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             >Get Started For Free</a
           >
         </section>
         <div class="mockUps">
-          <img
+          <img id="image1"
             src="./image/illustration_mockups.svg"
             alt="illustration_mockups"
           />
@@ -146,6 +157,7 @@
       src="https://kit.fontawesome.com/f52ad0f3f6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./script/script.js"></script>
     </footer>
   </body>
   <script src="https://kit.fontawesome.com/e5ced9d846.js" crossorigin="anonymous"></script>
