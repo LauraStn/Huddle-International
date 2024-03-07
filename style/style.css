@@ -12,6 +12,7 @@ body {
 .bg__dark {
   background-color: #212121;
   color: #ECECEC;
+  
 
 }
 
@@ -132,7 +133,7 @@ img {
   text-align: center;
   padding: 60px 35px 50px 35px;
   margin-inline: 20px;
-  background-color: white;
+  /* background-color: white; */
 
 }
 
