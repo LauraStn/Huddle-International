@@ -10,8 +10,8 @@ body {
 }
  
 .bg__dark {
-  background-color: hsl(192, 100%, 9%);
-  color: aliceblue;
+  background-color: #212121;
+  color: #ECECEC;
 
 }
 
