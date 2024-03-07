@@ -9,7 +9,7 @@ buttonDark.addEventListener("click", () => {
     buttonDark = document.querySelector(".myImg").src = "./image/light-mode.png";
     logo.style.backgroundColor = "white";
     for(let i = 0; i < sectionArticleIllustration.length; i++){
-      sectionArticleIllustration[i].style.backgroundColor = "red"
+      sectionArticleIllustration[i].style.backgroundColor = "lightgray"
     }
     for(let i = 0; i < sectionArticleIllustrationImg.length; i++){
       sectionArticleIllustrationImg[i].style.filter = "brightness(2)"
