@@ -8,8 +8,9 @@ let sectionArticleIllustrationImg = document.querySelectorAll(
   ".main__section__article img"
 );
 let bg__image = document.querySelector(".bg_img");
+let bloc = document.querySelector(".bloc");
 let audio = document.querySelector("#hidden");
-let playSound = () => {
+let audioPlay = () => {
   audio.play();
 };
 
@@ -19,26 +20,33 @@ let audioStop = () => {
 
 buttonDark.addEventListener("click", () => {
   setDark.classList.toggle("bg__dark");
+
   if (setDark.classList.contains("bg__dark")) {
+    bloc.style.backgroundColor = "#212121";
     buttonDark = document.querySelector(".myImg").src =
       "./image/light-mode.png";
-    logo.style.backgroundColor = "white";
+    logo.src = "./image/logo1.svg";
     bg__image.style.visibility = "hidden";
-    playSound();
-    // for (let i = 0; i < sectionArticleIllustration.length; i++) {
-    //   sectionArticleIllustration[i].style.backgroundColor = "lightgray";
-    // }
-    // for (let i = 0; i < sectionArticleIllustrationImg.length; i++) {
-    //   sectionArticleIllustrationImg[i].style.filter = "brightness(2)";
-    // }
+    audioPlay();
+    for (let i = 0; i < sectionArticleIllustration.length; i++) {
+      sectionArticleIllustration[i].style.backgroundColor = "#212121";
+      sectionArticleIllustration[i].style.boxShadow = "white 0px 1px 7px";
+    }
+    for (let i = 0; i < sectionArticleIllustrationImg.length; i++) {
+      sectionArticleIllustrationImg[i].style.backgroundColor = "white";
+      sectionArticleIllustrationImg[i].style.borderRadius = "15px";
+    }
   } else {
     buttonDark = document.querySelector(".myImg").src =
       "./image/icons8-symbole-de-la-lune-30.png";
+    bloc.style.backgroundColor = "white";
     logo.style.backgroundColor = "transparent";
+    logo.src = "./image/logo.svg";
     bg__image.style.visibility = "visible";
     audioStop();
-    // for (let i = 0; i < sectionArticleIllustration.length; i++) {
-    //   sectionArticleIllustration[i].style.backgroundColor = "transparent";
-    // }
+    for (let i = 0; i < sectionArticleIllustration.length; i++) {
+      sectionArticleIllustration[i].style.backgroundColor = "transparent";
+      sectionArticleIllustration[i].style.boxShadow = "";
+    }
   }
 });

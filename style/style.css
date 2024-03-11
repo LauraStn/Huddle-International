@@ -10,7 +10,6 @@ body {
 }
 
 .bg__dark {
-  /* background-color: #212121; */
   background: url("/image/dark-vador-darth-vader-article-attakus-art.jpg");
   background-attachment: fixed;
   background-size: cover;
