@@ -8,12 +8,26 @@ body {
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
- 
-.bg__dark {
-  background-color: #212121;
-  color: #ECECEC;
-  
 
+.bg__dark {
+  /* background-color: #212121; */
+  background: url("/image/dark-vador-darth-vader-article-attakus-art.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ececec;
+  animation: fade-in ease-in backwards 5s;
+}
+.myImg {
+  cursor: pointer;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .bg_img {
@@ -134,7 +148,6 @@ img {
   padding: 60px 35px 50px 35px;
   margin-inline: 20px;
   /* background-color: white; */
-
 }
 
 .main__section__article img {
@@ -293,7 +306,9 @@ i:hover {
 .header a:hover {
   color: hsl(208, 11%, 55%);
 }
-
+#hidden {
+  visibility: hidden;
+}
 /* Responsive */
 @media screen and (min-width: 600px) {
   .bottomFooter {
