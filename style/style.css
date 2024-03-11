@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100vw;
-  /* max-height: 100vh; */
   font-size: 18px;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -10,12 +9,14 @@ body {
 }
 
 .bg__dark {
-  background: url("/image/dark-vador-darth-vader-article-attakus-art.jpg");
+  background: url("/image/dark-vador-mobile.svg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ececec;
   animation: fade-in ease-in backwards 5s;
+  max-width: 100%;
+  height: auto;
 }
 .myImg {
   cursor: pointer;
@@ -349,7 +350,18 @@ i:hover {
   .secondPage div {
     width: 350px;
   }
+  .bg__dark {
+    background: url("/image/dark-vador.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ececec;
+    animation: fade-in ease-in backwards 5s;
+    max-width: 100%;
+    height: auto;
+  }
 }
+
 @media screen and (min-width: 900px) {
   .header {
     padding: 30px 70px 0 80px;
